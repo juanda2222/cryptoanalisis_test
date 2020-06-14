@@ -1,0 +1,37 @@
+ 
+ todas las solicitudes deben ser desde sagas
+ desplegar en netlify
+ testing 
+
+--------------------------------------------
+
+EVALUACIÓN DE CONOCIMIENTOS:
+
+Desarrollar un proyecto con las siguientes características:
+
+Tecnologías a usar:
+Proyecto next.js
+Debe usar Redux y Sagas
+Testing sobre las llamadas a Sagas
+
+Tareas que debe realizar la aplicación
+Hacer llamadas a una API y desde Sagas
+Renderizar contenido en material UI
+Hacer Post desde un formulario creado con Redux form hacia una API propia o pública, mediante sagas.
+Tener un performance mayor a 90.
+
+Presentar el proyecto 
+Github to heroku
+Hacer deploy del proyecto en Heroku o similares
+Enviar el link al correo huascarm@gmail.com
+Adjuntar su nombre, correo y whatsapp.
+
+Evaluar:
+
+Buenas practicas u código limpio
+Performance
+Estructura de programación en sus componentes
+Cumpla todos los requisitos.
+
+Plazo:
+Miercoles 17 de junio - 20:00 (gmt-4)

@@ -1,0 +1,28 @@
+
+
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+
+  font-family: 'opensans', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1 {
+  font-weight: 700;
+}
+h3 {
+  font-weight: 400;
+}
