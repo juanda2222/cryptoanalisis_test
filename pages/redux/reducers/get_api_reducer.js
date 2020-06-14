@@ -4,12 +4,13 @@ import {GET_API_LOAD_DATA} from '../actions/get_api_actions';
 
 const get_api_reducer = (
     state = {
-        api_data: {},
+        is_loading:true,
+        api_data: null,
     }, 
     action) => {
     switch (action.type) {
         case GET_API_LOAD_DATA:
-            console,log("Loading data from get api...")
+            console.log("Loading data from get api...")
             return {
                 ...state, 
                 value: state.value + 1

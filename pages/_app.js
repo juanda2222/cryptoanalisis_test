@@ -1,4 +1,6 @@
 
+import React, {FC} from 'react';
+
 // Global styles
 import './_app.css'
 
