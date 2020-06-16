@@ -10,7 +10,7 @@ import GetData from "../../clientApi/clientGetApi"
 
 const delay = (ms) => new Promise(res => setTimeout(res, ms))
 
-function* generator_load_get_data() {
+export function* generator_load_get_data() {
 
     //fetch from the api
     const data = yield call(GetData)

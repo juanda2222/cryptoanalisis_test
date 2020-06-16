@@ -10,7 +10,7 @@ import {DumbPromise, PostData} from "../../clientApi/clientPostApi"
 
 
 
-function* generator_load_post_data(action) {
+export function* generator_load_post_data(action) {
 
     //fetch from the api
     const data = yield call(PostData, action.data)
