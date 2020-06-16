@@ -7,7 +7,7 @@ import './_app.css'
 //redux related
 import {Provider} from 'react-redux';
 import withRedux from "next-redux-wrapper";
-import store from './redux/store';
+import initializeStore from '../redux/store';
 
 
 // This component is used to initialize each page:
@@ -29,7 +29,7 @@ class MyApp extends App {
       const {Component, pageProps} = this.props;
 
       return (
-          <Provider store={store}>
+          <Provider store={initializeStore()}>
               <Component {...pageProps}/>
           </Provider>
       );
@@ -38,7 +38,7 @@ class MyApp extends App {
 }
 
 //makeStore function that returns a new store for every request
-const makeStore = () => store;
+const makeStore = () => initializeStore;
 
 //withRedux wrapper that passes the store to the App Component
-export default withRedux(makeStore)(MyApp);
+export default withRedux(initializeStore)(MyApp);

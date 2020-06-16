@@ -1,12 +1,7 @@
 
 
-import {POST_API_LOAD_DATA} from '../actions/post_api_actions';
+import {UPDATE_POST_API_DATA} from '../actions/post_api_actions';
 
-const some_get = async () => {
-    setTimeout(() => {
-        console.log('Data received!')
-      }, 1000);
-}
 
 const post_api_reducer = (
     state = {
@@ -15,12 +10,12 @@ const post_api_reducer = (
     }, 
     action) => {
     switch (action.type) {
-        case POST_API_LOAD_DATA:
-            console.log("Loading data from post api...")
+        case UPDATE_POST_API_DATA:
+            console.log("Data updated from post api")
             //await some_get()
             return {
                 ...state, 
-                api_data: "this is some api data bby",
+                api_data: JSON.stringify(action.value),
                 is_loading: false,
             };
         default:
